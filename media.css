@@ -1,0 +1,61 @@
+/* Медиа-запросы */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    align-items: flex-start; /* Изменение выравнивания на левый край */
+  }
+
+  .left-header {
+    margin-bottom: 10px;
+  }
+
+  .right-header {
+    display: none;
+  }
+
+  li:nth-child(6) {
+    display: block;
+  }
+
+  .content {
+    padding: 20px;
+    align-items: flex-start; /* Изменение выравнивания на левый край */
+  }
+
+  .right-content {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+  }
+
+  .left-content {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    width: 100%;
+    max-width: none;
+  }
+
+  .item:nth-child(1) > p {
+    font-size: 36px;
+  }
+
+  .item:nth-child(2) > p {
+    font-size: 20px;
+  }
+
+  .item:nth-child(3) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .item:nth-child(3) > button {
+    width: 100%;
+  }
+}
+
