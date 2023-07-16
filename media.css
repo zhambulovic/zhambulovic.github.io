@@ -110,9 +110,8 @@ body {
   .logo{
     display: none;
   }
-  ul{
-    display: flex;
-    gap: 5px;
+  li{
+    margin-left: 5px;
   }
   
 }
