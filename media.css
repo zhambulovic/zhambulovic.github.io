@@ -18,11 +18,12 @@ body {
 
  ul li {
     font-size: 16px;
-    gap: 5px;
   }
 
   .text-item p:nth-child(1) {
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: orange;
   }
 
   .text-item p:nth-child(2) {
