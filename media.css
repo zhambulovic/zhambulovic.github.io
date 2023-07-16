@@ -3,27 +3,22 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  /* overflow: hidden; */
   padding: 0;
 }
 
-/* Общие стили для всех экранов */
-
-/* ... Ваш текущий CSS ... */
-
-/* Стили для маленьких экранов (ширина экрана меньше 768 пикселей) */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 16px; /* Уменьшаем базовый размер текста */
+    font-size: 16px;
   }
 
-  /* Уменьшаем размеры шрифта для различных элементов */
+
   .header {
     font-size: 18px;
   }
 
  ul li {
     font-size: 16px;
+    gap: 5px;
   }
 
   .text-item p:nth-child(1) {
