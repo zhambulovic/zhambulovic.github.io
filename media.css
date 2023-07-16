@@ -1,61 +1,117 @@
-/* Медиа-запросы */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  /* overflow: hidden; */
+  padding: 0;
+}
+
+/* Общие стили для всех экранов */
+
+/* ... Ваш текущий CSS ... */
+
+/* Стили для маленьких экранов (ширина экрана меньше 768 пикселей) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Уменьшаем базовый размер текста */
+  }
+
+  /* Уменьшаем размеры шрифта для различных элементов */
+  .header {
+    font-size: 18px;
+  }
+
+ ul li {
+    font-size: 16px;
+  }
+
+  .text-item p:nth-child(1) {
+    font-size: 20px;
+  }
+
+  .text-item p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .box h5 {
+    font-size: 20px;
+  }
+
+  .box p {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
-    height: auto;
-    padding: 20px;
-    align-items: flex-start; /* Изменение выравнивания на левый край */
+    align-items: center;
   }
 
   .left-header {
-    margin-bottom: 10px;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-direction: column;
   }
 
   .right-header {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
     display: none;
   }
 
-  li:nth-child(6) {
-    display: block;
+  .number {
+    width: auto;
+    align-items: center;
   }
 
-  .content {
-    padding: 20px;
-    align-items: flex-start; /* Изменение выравнивания на левый край */
-  }
-
-  .right-content {
-    width: 100%;
-    height: auto;
-    background-size: contain;
-  }
-
-  .left-content {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
+  .nav {
+    flex-direction: column;
   }
 
   .item {
     width: 100%;
-    max-width: none;
+    justify-content: center;
+    text-align: center;
   }
 
-  .item:nth-child(1) > p {
-    font-size: 36px;
-  }
-
-  .item:nth-child(2) > p {
-    font-size: 20px;
-  }
-
-  .item:nth-child(3) {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .item:nth-child(3) > button {
+  .text-item {
     width: 100%;
   }
-}
 
+  .pizza {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .popular {
+    height: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    align-items: center;
+  }
+
+  .box > img {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .box > p:nth-child(4) {
+    color: black;
+    text-align: center;
+  }
+  .logo{
+    display: none;
+  }
+  
+}
